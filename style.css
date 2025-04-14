@@ -1,0 +1,468 @@
+.display {
+    font-family: "Lexend", sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+
+.mockup {
+    height: 780px;
+    display: flex;
+    justify-content: center;
+    background-color: #6acafd36;
+    padding: 80px 0px;
+    border-radius: 0% 0% 80px 0%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 80px;
+}
+
+.hello {
+    margin: none;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #9a9c9e;
+}
+
+.tagline {
+    margin-top: 8px;
+    margin-bottom:40px;
+    font-weight: 400;
+    font-size: 3.4rem;
+    line-height: 1.4;
+    color: #404855;
+}
+
+.cta-button {
+    display: block;
+    background-color: rgb(25, 157, 246);
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 12px;
+    border: none;
+    max-width: fit-content;
+
+}
+
+#personal {
+    margin: 240px 120px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-img {
+    height: 240px;
+    border-radius: 50%;
+    border: 8px solid rgba(25, 158, 246, 0.313);
+}
+
+
+.personal-name {
+    padding: 40px 0px 0px 0px;
+    font-weight: 400;
+    font-size: 2.3rem;
+    color: #404855;
+}
+
+.personal-desc {
+    padding-top: 14px;
+    font-weight: 200;
+    font-size: 1.3rem;
+    max-width: 660px;
+    text-align: center;
+    line-height: 1.8;
+    color: #989ca2;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content 1fr;
+    gap: 40px;
+    padding: 80px 100px;
+}
+
+.experience {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #404855;
+    margin-bottom: 24px;
+}
+
+
+.company {
+    grid-column: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+}
+
+.company-image {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    height: 240px;
+    border: 1px solid rgb(231, 231, 231);
+}
+
+
+
+.company > h4 {
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #404855;
+}
+
+.company > p {
+    font-weight: 300;
+    color: #404855;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.company > a {
+    color: rgb(25, 157, 246);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.app {
+    grid-column: span 3;
+    grid-row: 2 / -2;
+    display: flex;
+    background-color: rgba(216, 216, 216, 0.256);
+    height: fit-content;
+    padding: 20px 32px;
+    margin-bottom: 32px;
+    border-radius: 64px;
+    justify-content: space-between;
+}
+
+.app-icon {
+    height: 48px;
+    border-radius: 12px;
+}
+
+#contact {
+    margin: 200px 100px;
+}
+
+.contact-title {
+    color: #404855;
+    font-size: 3.2rem;
+}
+
+.contact-text {
+    color: #929baa;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 16px;
+    font-weight: 200;
+}
+
+span {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 12px;
+}
+
+.contact-button {
+    font-family: "Lexend", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 40px;
+    padding: 10px 24px;
+    border: none;
+    color: white;
+    background-color: rgb(25, 157, 246);
+    border-radius: 16px 14px;
+}
+
+#footer {
+    background-color: #404855;
+    padding: 64px 100px;
+}
+
+.footer-flex {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+}
+
+.footer-item {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 32px;
+    color: white;
+    font-family: "Lexend", sans-serif;
+    font-weight: 200;
+}
+
+
+@media (max-width: 640px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        margin-top: 80px;
+    }
+    
+    .mockup {
+        height: fit-content;
+        width: 100%;
+        justify-content: center;
+        background-color: #6acafd36;
+        margin-top: 64px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        border-top-left-radius: 56px;
+        border-top-right-radius: 56px;
+        border-bottom-right-radius: 0;
+        order: 2;
+        
+    }
+
+    .mockup > img {
+        height: 420px;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 80px;
+    }
+    
+    .hello {
+        margin: none;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: #9a9c9e;
+        text-align: center;
+    }
+    
+    .tagline {
+        margin-top: 8px;
+        margin-bottom:40px;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 1.6;
+        color: #404855;
+        text-align: center;
+    }
+    
+    .cta-button {
+        display: block;
+        background-color: rgb(25, 157, 246);
+        color: white;
+        padding: 12px 24px;
+        font-size: 20px;
+        font-weight: 300;
+        border-radius: 12px;
+        border: none;
+        max-width: fit-content;
+        align-self: center;
+    
+    }
+
+
+
+    .container-self {
+        min-width: 100%;
+    }
+
+
+    #personal {
+        margin: 160px 32px;
+    }
+    
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .personal-img {
+        height: 240px;
+        border-radius: 50%;
+        border: 8px solid rgba(25, 158, 246, 0.313);
+    }
+    
+    
+    .personal-name {
+        padding: 40px 0px 0px 0px;
+        font-weight: 400;
+        font-size: 1.7rem;
+        color: #404855;
+        text-align: center;
+    }
+    
+    .personal-desc {
+        padding-top: 14px;
+        font-weight: 200;
+        font-size: 1.2rem;
+        max-width: 660px;
+        text-align: center;
+        line-height: 1.8;
+        color: #989ca2;
+    }
+
+
+
+    .grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: min-content min-content 1fr;
+        gap: 40px;
+        padding: 80px 32px;
+    }
+    
+    .experience {
+        grid-column: span 3;
+        text-align: center;
+        color: #404855;
+        margin-bottom: 24px;
+    }
+    
+    
+    .company {
+        grid-column: span 3;
+        grid-row: 1fr 1fr 1fr;
+    }
+    
+    .company-image {
+        width: 100%;
+        border-radius: 16px;
+        object-fit: cover;
+        height: 240px;
+        border: 1px solid rgb(231, 231, 231);
+    }
+    
+    
+    
+    .company > h4 {
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 22px;
+        color: #404855;
+    }
+    
+    .company > p {
+        font-weight: 300;
+        color: #404855;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .company > a {
+        color: rgb(25, 157, 246);
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    
+    .app {
+        width: 100%;
+        height: fit-content;
+        grid-column: span 3;
+        display: flex;
+        background-color: rgba(216, 216, 216, 0.256);
+        padding: 16px 24px;
+        margin-bottom: 32px;
+        border-radius: 64px;
+        justify-content: space-between;
+        overflow: hidden;
+        gap: 16px;
+    }
+
+    #contact {
+        margin: 240px 32px;
+    }
+    
+    .contact-title {
+        color: #404855;
+        font-size: 2.5rem;
+    }
+    
+    .contact-text {
+        color: #929baa;
+        text-align: center;
+        line-height: 1.5;
+        margin-top: 10px;
+        font-weight: 200;
+        font-size: 1.4rem;
+    }
+    
+    span {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 12px;
+    }
+    
+    .contact-button {
+        font-family: "Lexend", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 40px;
+        padding: 10px 24px;
+        border: none;
+        color: white;
+        background-color: rgb(25, 157, 246);
+        border-radius: 12px 10px;
+    }
+
+    #footer {
+        background-color: #404855;
+        padding: 40px 32px 64px 32px;
+    }
+    
+    .footer-flex {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+    
+    .footer-item {
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    
+    .footer {
+        text-align: center;
+        margin-top: 24px;
+        color: white;
+        font-family: "Lexend", sans-serif;
+        font-weight: 200;
+    }
+}
+
